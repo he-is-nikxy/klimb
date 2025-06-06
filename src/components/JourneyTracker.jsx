@@ -46,6 +46,7 @@ export default function JourneyTracker() {
       <div className="tracker-container">
         {steps.map((step) => (
           <div key={step.id} className="tracker-card">
+            <h4 style={{color:"coral"}}>{step.id}</h4>
             <img src={step.icon} alt={step.title} className="tracker-icon" />
             <h3>{step.title}</h3>
             <p>{step.description}</p>
