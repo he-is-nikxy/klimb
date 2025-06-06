@@ -1,0 +1,65 @@
+.quiz-launcher {
+  padding: 5rem 2rem;
+  background-color: var(--bg-section);
+  color: var(--text-primary);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quiz-launcher h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-launcher p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.quiz-launcher .start-button {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quiz-launcher .start-button:hover {
+  background-color: #ff3b2e;
+}
+
+.quiz-visuals {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.quiz-mascot {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.quiz-video {
+  width: 300px;
+  height: 170px;
+  border-radius: 12px;
+}
+
+
+
+
+
+/* Dark mode variables */
+body.dark {
+  --bg-section: #121212;
+  --text-primary: #f0f0f0;
+  --text-secondary: #b3b3b3;
+  --accent: #ff6f61;
+}

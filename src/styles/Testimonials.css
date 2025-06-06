@@ -1,0 +1,62 @@
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: var(--bg-section);
+  color: var(--text-primary);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-card {
+  min-width: 280px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  scroll-snap-align: start;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-avatar {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.testimonial-card .quote {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.testimonial-card .sport {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+
+
+
+/* Dark mode additions */
+body.dark {
+  --card-bg: #1e1e1e;
+}
